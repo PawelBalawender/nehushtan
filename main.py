@@ -14,6 +14,10 @@ import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
+from food import Food
+from snake import Snake
+from board import Board
+
 # just for type hints
 Field = Tuple[int, int]  # [(1, 0), (1, 1), (1, 2)...]
 Patch = patches.Rectangle
@@ -23,7 +27,6 @@ Ax = Any  # idk how to get the type of ax; writes no attribute error
 
 if __name__ == '__main__':
     fig, ax = plt.subplots()
-
 
     is_alive = threading.Event()
     is_alive.set()

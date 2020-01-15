@@ -4,6 +4,7 @@
 This module implements an Abstract Base Class for every snake-ish object
 """
 
+
 class GameObject:
     def __init__(self, board, char: str, color: str, fields: list):
         """

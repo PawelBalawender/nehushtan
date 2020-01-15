@@ -4,6 +4,16 @@
 This module implements the Board class, which is supposed to answer
 any snake-ish request that would ever be requested
 """
+import random
+from typing import Any, Tuple, Dict, List
+
+from matplotlib.patches import Rectangle as Patch
+from matplotlib.figure import Figure
+
+from game_object import GameObject
+
+Field = Tuple[int, int]  # [(1, 0), (1, 1), (1, 2)...]
+Ax = Any
 
 
 class Board:
@@ -42,7 +52,7 @@ class Board:
         for field in obj.fields:
             x, y = field
             self.fields[y][x] = obj.char
-            patch = patches.Rectangle(field, self.xsize, self.ysize, fc=obj.color)
+            patch = Patch(field, self.xsize, self.ysize, fc=obj.color)
             _patches.append(patch)
             self.ax.add_patch(patch)
 
@@ -57,7 +67,8 @@ class Board:
         # if it's occupied - would be faster then, but what about a case when
         # the snake is so big that it's on a significant part of the board?
         field = random.choice(free)
-        f = Food(self, field)
+        # f = Food(self, field)
+        f = GameObject(self, char='F', color='g', fields=[field])
 
     def rm_food(self, field: Field):
         """Remove the food that has already been eaten by the snake"""

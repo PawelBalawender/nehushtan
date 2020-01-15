@@ -8,6 +8,10 @@ But most importantly
 It knows how to find a snacc
 (todo: or will know soon)
 """
+from typing import Callable
+
+from board import Board
+from game_object import GameObject
 
 
 class Snake(GameObject):
