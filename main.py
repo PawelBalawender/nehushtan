@@ -69,7 +69,7 @@ rotate 180 degrees')
 
     cid = fig.canvas.mpl_connect('key_press_event', keyboard_handler)
     input_thread = threading.Thread(target=input_handler)
-    input_thread.start()
+    input_thread.start() 
 
     while is_alive.is_set():
         # s.move gotta be in the main thread, cause it deals with mpl methods
