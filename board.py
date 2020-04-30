@@ -16,7 +16,7 @@ Field = Tuple[int, int]  # [(1, 0), (1, 1), (1, 2)...]
 Ax = Any
 
 
-class Board:
+class Board: 
     def __init__(self, fig: Figure, ax: Ax, width: int=21, height: int=21):
         self.fig = fig
         self.ax = ax
