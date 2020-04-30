@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """
 Just a snake class.
-It protecc
+It protecc 
 It attacc
 But most importantly
 It knows how to find a snacc
