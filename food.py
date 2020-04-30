@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """
 This module implements the Food class, which is not finished yet - no fancy
-food like bananas or elixirs or something, but it's stable and it's ok
+food like bananas or elixirs or something, but it's stable and it's ok 
 """
 from typing import Tuple
 
