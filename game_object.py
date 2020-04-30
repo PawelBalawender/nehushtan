@@ -9,7 +9,7 @@ class GameObject:
     def __init__(self, board, char: str, color: str, fields: list):
         """
         Argument 'board' is of type Board from the board module
-        I don't include it since it would cause a circular dependency
+        I don't include it since it would cause a circular dependency 
         """
         self.board = board
         self.char = char  # unique char that represent the obj on the board
